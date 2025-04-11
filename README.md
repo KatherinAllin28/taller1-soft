@@ -62,4 +62,11 @@ Bring-U is a standalone project and is not intended to be part of a larger syste
 
 There is no specific distinction among users of our app. However, we anticipate that the primary user group will be college students, typically aged between seventeen and forty. This age group is more familiar with such platforms and uses them frequently.
 
+### Actividad 3:  
+En esta actividad se debía escoger una clase y realizar inversión de dependencia, se escogió la clase loginaccount que se encuentra dentro de "accounts/views.py" donde la clase“loginaccount” dependía directamente de la función “authenticate” de Django, lo que acoplaba fuertemente la lógica de autenticación al framework, lo cual dificultaba el cambio de una implementación futura como, por ejemplo, usar autenticación externa; debido a esto se creó dentro de la carpeta “accounts” la carpeta “services” y dentro de esta la interfaz “auth_interface.py” que define el contrato de autenticación. Luego se implementó “django_auth_service.py”, que usa authenticate internamente. Todo lo anterior para que finalmente loginaccount pasara a depender de IAuthService. 
+
+#### Beneficios: 
+
+- Mejor separación de responsabilidades. 
+- Flexibilidad para cambiar de sistema de autenticación sin modificar la vista. 
 
