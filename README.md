@@ -21,7 +21,7 @@ For other OS look for custom tutorials
 
 ### Set project
 
-1. Make sure to clone the repository using: `git clone https://github.com/JoseTor101/bring-u`
+1. Make sure to clone the repository using: `git clone https://github.com/KatherinAllin28/taller1-soft`
 2. Move to root folder: `cd BRING_U_PROJECT`
 3. Run migrations: `python3 manage.py makemigrations`
 4. `python3 manage.py migrate`
