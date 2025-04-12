@@ -127,4 +127,14 @@ En esta actividad se debía escoger una clase y realizar inversión de dependenc
 - Flexibilidad para cambiar de sistema de autenticación sin modificar la vista. 
 
 ### Actividad 4: 
+Implementamos un patrón de diseño llamado Logger dentro del proyecto, el cual escogimos porque nos parece súper útil en este tipo de proyectos y sobretodo si se desea crecer con el tiempo. Este patrón de diseño es importante por varias razones y a continuación mencionaremos algunas:
+#### Depuración: 
+Nos ayuda a encontrar errores en el código sin tener que usar print() por todos lados.
+#### Monitoreo: 
+Podemos ver cómo se está comportando de la app en tiempo real o después de su ejecución, lo cual sirve mucho para analítica de datos y realizar posibles mejoras en la experiencia de uso.
+#### Auditoría: 
+Guarda información sobre acciones importantes, como accesos, cambios, errores críticos, etc.
+#### Escalabilidad:
+En caso de que el proyecto crezca, los print() ya son más complejos de usar y ejecutar, mientras que un logger permite guardar información en archivos, enviar mensajes a otros sistemas o filtrarlos por niveles.
+
 ### Actividad 5: 
