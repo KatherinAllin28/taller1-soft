@@ -62,6 +62,62 @@ Bring-U is a standalone project and is not intended to be part of a larger syste
 
 There is no specific distinction among users of our app. However, we anticipate that the primary user group will be college students, typically aged between seventeen and forty. This age group is more familiar with such platforms and uses them frequently.
 
+# TALLER 01 – GRUPOS 
+## Katherin Nathalia Allin Murillo 
+## Manuela Caro Villada 
+## Dixon Andrés Calderón Ortega 
+
+### Actividad 1: https://github.com/KatherinAllin28/taller1-soft 
+
+### Actividad 2:  
+
+#### ASPECTOS POSITIVOS: 
+
+##### Usabilidad 
+- Al estar desarrollado en Django tiene una etsructura clara y que tiene buen potencial de escalabilidad en cuanto a el desarrollo de esta. 
+- Tiene archivos muy particulares de Django como views.py, models.py y templates, entre otros, lo cual facilita mucho la interpretación del proyecto en caso de cambiar de personal de desarrollo. 
+- Los templates HTML permite separar todo lo que tiene que ver con frontend con la lógica del negocio. 
+
+##### Compatibilidad 
+- Django es compatible con diversas bases de datos y navegadores, entonces es un punto a favor en compatibilidad. 
+
+##### Rendimiento 
+- Está desarrollado de una forma que no hay tantos ciclos innecesarios, lo cual hace que sea más facil y rapido su procesamiento, ppor ende su rendimiento es bueno. 
+- La estructura modular de Django permite de por si un manejo muy eficiente.  
+
+##### Seguridad 
+- El uso de Django ya aporta protección contra muchas vulnerabilidades comunes. 
+- Por lo que se ve en views.py podemos notar que maneja rutas de autenticación, esto indica que el sistema tiene al menos una capa básica de control de acceso. 
+
+ 
+#### ASPECTOS POR MEJORAR: 
+
+##### Usabilidad 
+- El README puede ser un poco más específico en cuanto a la ejecución del proyecto, su historia, su funcionalidad, las etapas de desarrollo y toda información requerida para la interpretación de este ya sea para uso del usuario dentro del servidor y de posibles desarrolladores. 
+- El diseño siempre podrá ser mejor. 
+
+##### Compatibilidad 
+- Falta algún archivo guía para la configuración, si se requieren permisos o no para modificar algo, si hay superusuario, tipos tecnologías empleadas como bases de datos, etc. 
+
+##### Rendimiento 
+- Realización de pruebas de rendimiento para ver posibles fallas y poder resolverlas antes de ofrecer el producto al público. 
+
+##### Seguridad 
+- No tener visible la secret_key en el repositorio ya que este es público y eso puede afectar el proyecto si cae en manos incorrectas. 
+
+ 
+
+#### POSIBLES INVERSIONES: 
+
+##### Mejora de interfaz (UI/UX) 
+- Invertir en un diseñador UX para hacer el producto más llamativo para sus potenciales clientes. 
+
+##### Automatización y testing 
+- Invertir en pruebas automáticas  
+
+##### Escalabilidad en base de datos 
+- Considerar PostgreSQL o servicios en la nube como AWS RDS o Google Cloud SQL.
+  
 ### Actividad 3:  
 En esta actividad se debía escoger una clase y realizar inversión de dependencia, se escogió la clase loginaccount que se encuentra dentro de "accounts/views.py" donde la clase“loginaccount” dependía directamente de la función “authenticate” de Django, lo que acoplaba fuertemente la lógica de autenticación al framework, lo cual dificultaba el cambio de una implementación futura como, por ejemplo, usar autenticación externa; debido a esto se creó dentro de la carpeta “accounts” la carpeta “services” y dentro de esta la interfaz “auth_interface.py” que define el contrato de autenticación. Luego se implementó “django_auth_service.py”, que usa authenticate internamente. Todo lo anterior para que finalmente loginaccount pasara a depender de IAuthService. 
 
@@ -70,3 +126,5 @@ En esta actividad se debía escoger una clase y realizar inversión de dependenc
 - Mejor separación de responsabilidades. 
 - Flexibilidad para cambiar de sistema de autenticación sin modificar la vista. 
 
+### Actividad 4: 
+### Actividad 5: 
